@@ -21,7 +21,7 @@ export default function Contact() {
               <Mail className="h-5 w-5 text-primary" />
               <div>
                 <p className="text-xs text-muted-foreground font-medium">Email</p>
-                <p className="text-sm font-semibold">fimperial@ncf.edu.ph</p>
+                <p className="text-sm font-semibold">dpanganiban@gbox.ncf.edu.ph</p>
               </div>
             </CardContent>
           </Card>
@@ -31,7 +31,7 @@ export default function Contact() {
               <Phone className="h-5 w-5 text-primary" />
               <div>
                 <p className="text-xs text-muted-foreground font-medium">Phone</p>
-                <p className="text-sm font-semibold">+1 (555) 000-0000</p>
+                <p className="text-sm font-semibold">09070057040</p>
               </div>
             </CardContent>
           </Card>
@@ -43,7 +43,7 @@ export default function Contact() {
                 <p className="text-xs text-muted-foreground font-medium">
                   Location
                 </p>
-                <p className="text-sm font-semibold">Naga City, Philippines</p>
+                <p className="text-sm font-semibold">Naga City,Camarines Sur, Philippines</p>
               </div>
             </CardContent>
           </Card>
@@ -66,7 +66,7 @@ export default function Contact() {
                   </label>
                   <Input
                     id="name"
-                    placeholder="Fitzgerald Eric T. Imperial"
+                    placeholder="Darryl Ilag Panganiban"
                     required
                   />
                 </div>
@@ -78,7 +78,7 @@ export default function Contact() {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="fimperial@ncf.edu.ph"
+                    placeholder="dpanganiban@gbox.ncf.edu.ph"
                     required
                   />
                 </div>

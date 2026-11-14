@@ -1,5 +1,7 @@
+import "./about.css";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/next-app/components/ui/badge";
+
 
 const skills = [
   "JavaScript / TypeScript",
@@ -14,28 +16,59 @@ const skills = [
 
 export default function About() {
   return (
-    <div className="space-y-8 max-w-3xl mx-auto">
-      <div>
-        <h1 className="text-3xl font-bold tracking-tight">About Me</h1>
-        <p className="text-muted-foreground mt-1">
-          A little about my background, passion, and technical skillset.
-        </p>
-      </div>
+    <div className="about-wrapper">
+      <div className="about-container">
+        <div>
+          <h1 className="text-3xl font-bold tracking-tight">About Me</h1>
+          <p className="text-muted-foreground mt-1">
+            A little about my background, passion, and technical skillset.
+          </p>
+        </div>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>My Story</CardTitle>
-        </CardHeader>
+        <Card className="about-card">
+          <div className="profile-layout">
+            {/* Picture on the left */}
+            <img
+              src="/Darryl.jpg"
+              alt="Darryl"
+              className="profile-image"
+            />
 
-        <CardContent className="space-y-4 text-muted-foreground leading-relaxed">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic</p>
-            </CardContent>
-            </Card>
+            {/* Story on the right */}
+            <div className="story-content">
+              <CardHeader className="p-0 pb-3">
+                <CardTitle>My Story</CardTitle>
+              </CardHeader>
+              <CardContent className="p-0 text-muted-foreground leading-relaxed">
+                <p>
+                  Hi! I&apos;m Darryl, a creative and tech-driven student who
+                  enjoys building things, designing visuals, and mastering
+                  mobile games. I love exploring both the artistic and digital
+                  world—from drawing characters to coding simple programs, and
+                  even competing in games where strategy and skill matter.
+                  I&apos;m always learning, improving, and finding new ways to
+                  turn my skills into something useful for others.
+                </p>
+              </CardContent>
             </div>
+          </div>
+        </Card>
+
+        <Card className="about-card">
+          <CardHeader>
+            <CardTitle>Technical Skillset</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="skills-list">
+              {skills.map((skill) => (
+                <Badge key={skill} variant="secondary">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
   );
 }

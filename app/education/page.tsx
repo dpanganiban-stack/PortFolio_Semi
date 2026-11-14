@@ -2,38 +2,24 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { GraduationCap, Award } from "lucide-react";
 
 const educationList = [
+
   {
-    degree: "Master in Information Technology",
-    institution: "Ateneo Naga University",
-    period: "2012 - 2016",
-    description:
-      "Focused on software engineering, data structures, algorithms, and web development.",
-    achievements: [
-      "Magna Cum Laude",
-      "Dean's List (All Semesters)",
-      "Capstone Project Lead",
-    ],
-  },
-  {
-    degree: "BS in Information Technology",
-    institution: "University of Nueva Caceres",
-    period: "2005 - 2010",
+    degree: "Associate In Computer Technology",
+    institution: "Naga College Foundation",
     description:
       "Intensive program covering React, Node.js, databases, and deployment.",
     achievements: [
-      "Built 3 full-stack applications",
-      "Peer Code Reviewer",
+      "Improve my skills in programming and web development"
     ],
   },
   {
-    degree: "High School Education",
-    institution: "Ateneo de Naga University",
-    period: "1999 - 2003",
+    degree: "BEC",
+    institution: "Camarines Sur National High School",
     description:
       "Intensive program covering React, Node.js, databases, and deployment.",
     achievements: [
-      "Built 3 full-stack applications",
-      "Peer Code Reviewer",
+    
+      "Improve Skills in Welding and Fabrication"
     ],
   },
 ];
@@ -69,7 +55,7 @@ export default function Education() {
                 </div>
 
                 <span className="text-sm font-medium text-muted-foreground">
-                  {item.period}
+                 
                 </span>
               </div>
             </CardHeader>
@@ -97,4 +83,4 @@ export default function Education() {
       </div>
     </div>
   );
-}
+} 
